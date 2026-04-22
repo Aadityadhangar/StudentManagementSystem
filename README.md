@@ -6,34 +6,29 @@
 ## Project Structure
 
 ```
-SMS_VSCode/
-├── .vscode/
-│   ├── settings.json       ← tells VS Code where src, bin, and JAR are
-│   └── launch.json         ← Run config (click ▶ to launch)
+StudentManagementSystem/
 ├── lib/
-│   └── (put mysql-connector-java-5.x.jar HERE)
+│   └── mysql-connector-java-5.x.jar
 ├── src/
 │   └── com/sms/
-│       ├── Main.java                      ← ENTRY POINT — run this
+│       ├── Main.java
 │       ├── db/
-│       │   └── DBConnection.java          ← JDBC connection
+│       │   └── DBConnection.java
 │       ├── model/
-│       │   └── Student.java               ← POJO / data model
+│       │   └── Student.java
 │       ├── dao/
-│       │   ├── StudentDAO.java            ← all DB CRUD operations
-│       │   └── AdminDAO.java              ← login authentication
+│       │   ├── StudentDAO.java
+│       │   └── AdminDAO.java
 │       ├── ui/
-│       │   ├── LoginFrame.java            ← login screen
-│       │   ├── MainFrame.java             ← main window + sidebar
-│       │   └── AddEditStudentDialog.java  ← add/edit student form
+│       │   ├── LoginFrame.java
+│       │   ├── MainFrame.java
+│       │   └── AddEditStudentDialog.java
 │       └── util/
-│           ├── UITheme.java               ← colors, fonts, UI helpers
-│           └── Validator.java             ← input validation
-├── student_db.sql           ← run this in MySQL to set up DB + data
-└── README_VSCODE.md
-```
-
----
+│           ├── UITheme.java
+│           └── Validator.java
+├── student_db.sql
+├── README.md   
+└── .gitignore 
 
 ## Step-by-Step Setup
 
